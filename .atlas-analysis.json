@@ -1,0 +1,97 @@
+{
+  "projectType": "api-service",
+  "projectName": "Trendora Backend",
+  "projectDescription": "A RESTful API for an e-commerce clothing store built with NestJS, featuring JWT authentication, role-based access control, and real-time WebSocket support.",
+  "theme": "aspen",
+  "primaryColor": "#2563eb",
+  "lightColor": "#60a5fa",
+  "darkColor": "#1e40af",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/architecture",
+              "concepts/authentication",
+              "concepts/authorization"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/environment-setup",
+              "guides/database-configuration",
+              "guides/docker-deployment",
+              "guides/websockets"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/overview",
+              "api/authentication"
+            ]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/auth",
+              "api/products",
+              "api/files",
+              "api/seed"
+            ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              "api/errors",
+              "api/rate-limits"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "JWT-based authentication and authorization",
+    "Role-based access control (USER, ADMIN, SUPER_ADMIN)",
+    "Product CRUD operations with pagination",
+    "File upload and management for product images",
+    "Real-time messaging with WebSockets",
+    "Database seeding for development",
+    "Swagger/OpenAPI documentation",
+    "TypeORM integration with PostgreSQL",
+    "Custom guards and decorators",
+    "Input validation with class-validator"
+  ],
+  "publicApiSurface": [
+    "POST /api/auth/register",
+    "POST /api/auth/login",
+    "GET /api/auth/check-status",
+    "GET /api/products",
+    "POST /api/products",
+    "GET /api/products/:term",
+    "PATCH /api/products/:id",
+    "DELETE /api/products/:id",
+    "GET /api/files/product/:imageName",
+    "POST /api/files/product",
+    "GET /api/seed",
+    "WebSocket Gateway - message-from-client event"
+  ]
+}
